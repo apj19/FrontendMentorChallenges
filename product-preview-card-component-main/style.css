@@ -7,15 +7,19 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    /* flex-direction: column; */
+    min-height: 100vh;
+    flex-direction: column;
     background-color: #f2eae4;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* body>div{
 
 } */
 
+h1{
+    font-family: 'Fraunces', serif;
+}
 .strike{
     text-decoration:line-through;
     margin-top: 10px;
@@ -32,19 +36,23 @@ body{
     
 }
 
-.mobile-image{
-    width: 335px;
+.img-div{
+    width: 340px;
+    background-image: url("./images/image-product-mobile.jpg");
+    background-position: center;
+    background-size: cover;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    margin-bottom: -5px;
+    height: 250px;
+    /* margin-bottom: -5px; */
 }
 
 .main-content{
     margin-top: 0;
     box-sizing: border-box;
     /* width: 100%; */
-    padding: 5% 8%;
-    width: 335px;
+    padding: 5% 5%;
+    width: 340px;
 
     background-color: white;
     border-bottom-left-radius: 10px;
@@ -70,6 +78,10 @@ button{
     gap:1em;
 }
 
+button:hover{
+    background-color: #1a4031;
+}
+
 p{
     font-size: 14px;
     color: hsl(228, 12%, 48%); 
@@ -79,47 +91,49 @@ p{
     margin-top: 0.5rem;
 }
 
-.desktop-img{
-   display: none;
-}
-.br-2{
-    display: none;
-}
 
-
- /* change to 1024 */
-@media screen and (min-width:900px){
-    
-    
+@media screen and (min-width:1024px) {
     body{
-        background-color: red;
-    }
-    .mobile-image{
-        display: none;
-    }
-    .desktop-img{
-        display: block;
-        height: auto;
-        height: 450px;
+        background-color: #f2eae4;
     }
 
-    body>div{
+    main{
         display: grid;
         grid-template-columns: repeat(2,1fr);
-        gap:0;
-       
         
     }
 
+    .img-div{
+        /* width: 340px; */
+        height: 100%;
+        background-image: url("./images/image-product-desktop.jpg");
+        background-position: center;
+        background-size: cover;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+
+        /* height: 250px; */
+        /* margin-bottom: -5px; */
+    }
+
+
     .main-content{
-        width: 280px;
-        padding: 5% 8%;
-    }
-    .off-br1{
-        display: none;
-    }
-    .br-2{
-        display: block;
-    }
+        margin-top: 0;
+        box-sizing: border-box;
+        /* width: 100%; */
+        padding: 5% 15%;
+        width: 340px;
     
+        background-color: white;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    
+    
+    }
 }
+
+
+
+
