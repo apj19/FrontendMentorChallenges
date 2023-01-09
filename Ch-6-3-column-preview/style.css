@@ -1,0 +1,117 @@
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+body{
+    min-width: 375px;
+    max-width: 1440px;
+    min-height: 100vh;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    place-content: center;
+    background-color: hsl(0, 0%, 95%);
+}
+.card{
+    width: 325px;
+    padding: 12%;
+
+}
+.card>button{
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 150px;
+}
+
+.card>p{
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+    margin-bottom: 1.5rem;
+
+}
+.card>h1{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    margin: 1.5rem 0;
+
+}
+
+/* .card > *{
+    margin-bottom: 1.5rem;
+} */
+.btn:hover {
+    border: 2px solid white;
+    color: white;
+}
+.card-1{
+    margin-top: 5rem;
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.btn-1{
+    color:hsl(31, 77%, 52%) ;
+}
+.btn-1:hover{
+    background-color: hsl(31, 77%, 52%);
+    
+}
+
+.card-2{
+    background-color: hsl(184, 100%, 22%);
+}
+.btn-2{
+    color:hsl(184, 100%, 22%) ;
+}
+.btn-2:hover{
+    background-color: hsl(184, 100%, 22%) ;
+    
+}
+.card-3{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.btn-3{
+    color:hsl(179, 100%, 13%) ;
+}
+.btn-3:hover{
+    background-color: hsl(179, 100%, 13%) ;
+    
+}
+
+.attribution{
+    display: none;
+}
+
+@media screen and (min-width:1024px) {
+    main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        place-items: center;
+    }
+
+    .card-1, .card-3{
+        margin-top: 0;
+       border-radius: 0;
+    }
+
+    .attribution{
+        display: block;
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+    
+
+}
+
+
+
