@@ -14,7 +14,7 @@ body{
     background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
-
+    position: relative;
 
 }
 
@@ -32,6 +32,7 @@ body{
 main{
     width: 325px;
     position: relative;
+    z-index: 2;
 }
 .profile-img{
     position: absolute;
@@ -49,6 +50,9 @@ main{
     position: relative;
     z-index: -1;
     color: hsl(227, 10%, 46%);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
 
 }
 .age{
@@ -78,4 +82,45 @@ h3{
     margin-top: 0.5rem;
     font-size: 0.8rem;
     letter-spacing: 2px;
+}
+
+.bg{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+
+}
+
+.bg-top{
+    background-image: url("./images/bg-pattern-top.svg");
+    background-position: center;
+    background-size: cover;
+    
+}
+.bg-bottom{
+    background-image: url("./images//bg-pattern-bottom.svg");
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bcg-top{
+    position: absolute;
+    /* left:-20%;
+    bottom: 30%; */
+    /* width: 200px;
+    height: 200px; */
+    right:40%;
+    top:-190%;
+    z-index: -1;
+}
+
+.bcg-bottom{
+    position: absolute;
+    z-index: -1;
+   top:50%;
+   left:20%;
+
+
+
 }
