@@ -62,10 +62,9 @@ p{
     
    
 }
-.img-box:hover .color-overelay{
-        opacity: 0.6;
 
-    
+.img-box:hover .color-overelay{
+        opacity: 0.6;   
 }
 
 

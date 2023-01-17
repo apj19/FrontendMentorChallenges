@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- displays site properly based on user's device -->
 
@@ -18,97 +21,125 @@
     
     </style>
   </head>
-  <body class="flex justify-center items-center  min-h-[100vh] bg-white" >
-    <img class="absolute top-0" src="./images/bg-pattern-top-mobile.svg" alt="" srcset="">
+  <body class="flex flex-col justify-center items-center  min-h-[100vh] bg-white lg:mx-[10%] " >
+    <img class="absolute top-0 lg:hidden" src="./images/bg-pattern-top-mobile.svg" alt="" srcset="">
+
+    <img class="lg:blcok absolute top-[-4rem] left-0" src="./images/bg-pattern-top-desktop.svg" alt="" srcset="">
+
+    <img class="lg:blcok absolute right-[-4rem] bottom-[-4rem] " src="./images/bg-pattern-bottom-desktop.svg" alt="" srcset="">
     
-    <main class=" mt-16 box-border  w-80
-      text-center">
-      <h1 class="text-4xl
+    <main class=" mt-16 box-border  
+      text-center lg:text-start">
+      <div class="w-80 lg:grid lg:grid-cols-2 lg:w-auto lg:gap-48 mb-16 ">
+
+        <div class="">
+          <h1 class="text-4xl lg:w-64
        text-[#511f50] font-[700] mb-6">10,000+ of our users love our products.</h1>
 
-      <p class="mb-8 text-[#d3c8d2] font-[500]">We only provide great products combined with excellent customer service.
+      <p class="mb-8 text-[#d3c8d2] font-[500] lg:w-auto">We only provide great products combined with excellent customer service.
         See what our satisfied customers are saying about our services.</p>
+
+        </div>
+        
+        <div>
+          <div class="text-[#511f50] font-[700] w-full bg-[#f7f2f8] py-4 rounded mb-4 lg:flex lg:justify-center lg:items-center lg:gap-6 lg:relative lg:right-[6rem] ">
+            <div class="flex justify-center items-center mb-2 gap-2 ">
+              <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
     
-      <div class="text-[#511f50] font-[700] w-full bg-[#f7f2f8] py-4 rounded mb-4">
-        <div class="flex justify-center items-center mb-2 gap-2 ">
-          <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
+            </div>
+            
+            Rated 5 Stars in Reviews
+          </div>
+    
+          <div class="text-[#511f50] font-[700] w-full bg-[#f7f2f8] py-4 rounded mb-4
+          lg:flex lg:justify-center lg:items-center lg:gap-6 lg:relative lg:right-[3rem] 
+          ">
+            <div class="flex justify-center items-center mb-2 gap-2 ">
+              <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+    
+            </div>
+            
+            Rated 5 Stars in Report Guru
+          </div>
+    
+          <div class="text-[#511f50] font-[700] w-full bg-[#f7f2f8] py-4 rounded mb-4
+          lg:flex lg:justify-center lg:items-center lg:gap-6 
+          ">
+            <div class="flex justify-center items-center mb-2 gap-2 ">
+              <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+            <img src="./images/icon-star.svg" alt="">
+    
+            </div>
+            
+            Rated 5 Stars in BestTech
+          </div>
 
         </div>
-        
-        Rated 5 Stars in Reviews
+    
+
+
       </div>
-
-      <div class="text-[#511f50] font-[700] w-full bg-[#f7f2f8] py-4 rounded mb-4">
-        <div class="flex justify-center items-center mb-2 gap-2 ">
-          <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-
-        </div>
-        
-        Rated 5 Stars in Report Guru
-      </div>
-
-      <div class="text-[#511f50] font-[700] w-full bg-[#f7f2f8] py-4 rounded mb-4">
-        <div class="flex justify-center items-center mb-2 gap-2 ">
-          <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-        <img src="./images/icon-star.svg" alt="">
-
-        </div>
-        
-        Rated 5 Stars in BestTech
-      </div>
-
-
       
 
-      <div class="bg-[#511f50] text-white p-8 rounded-[10px] text-start mb-4">
-        <div class="flex gap-6 mb-6">
-          <img class="rounded-[50%] w-12" src="./images/image-colton.jpg" alt="" srcset="">
-          <div >
-            <p>Colton Smith </p> 
-             <p class="text-[#bb5c96]">Verified Buyer</p>  
-          </div>
-        </div >
-        "We needed the same printed design as the one we had ordered a week prior.
-        Not only did they find the original order, but we also received it in time.
-        Excellent!"
+      
+      <div class="w-80  lg:grid lg:grid-cols-3 lg:w-auto lg:gap-6">
+        <div class="bg-[#511f50] text-white p-8 rounded-[10px] text-start mb-4">
+          <div class="flex gap-6 mb-6">
+            <img class="rounded-[50%] w-12" src="./images/image-colton.jpg" alt="" srcset="">
+            <div >
+              <p>Colton Smith </p> 
+               <p class="text-[#bb5c96]">Verified Buyer</p>  
+            </div>
+          </div >
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+        </div>
+  
+  
+        <div class="bg-[#511f50] text-white p-8 rounded-[10px] text-start mb-4
+        lg:relative lg:top-[1rem]
+        ">
+          <div class="flex gap-6 mb-6">
+            <img class="rounded-[50%] w-12" src="./images/image-irene.jpg" alt="" srcset="">
+            <div >
+              <p>Irene Roberts </p> 
+               <p class="text-[#bb5c96]">Verified Buyer</p>  
+            </div>
+          </div >
+          "Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+        </div>
+  
+  
+        <div class="bg-[#511f50] text-white p-8 rounded-[10px] text-start mb-4
+        lg:relative lg:top-[2rem]
+        ">
+          <div class="flex gap-6 mb-6">
+            <img class="rounded-[50%] w-12" src="./images/image-anne.jpg" alt="" srcset="">
+            <div >
+              <p> Anne Wallace  </p> 
+               <p class="text-[#bb5c96]">Verified Buyer</p>  
+            </div>
+          </div >
+          "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+        </div>
+
       </div>
 
-
-      <div class="bg-[#511f50] text-white p-8 rounded-[10px] text-start mb-4">
-        <div class="flex gap-6 mb-6">
-          <img class="rounded-[50%] w-12" src="./images/image-irene.jpg" alt="" srcset="">
-          <div >
-            <p>Irene Roberts </p> 
-             <p class="text-[#bb5c96]">Verified Buyer</p>  
-          </div>
-        </div >
-        "Customer service is always excellent and very quick turn around. Completely
-        delighted with the simplicity of the purchase and the speed of delivery."
-      </div>
-
-
-      <div class="bg-[#511f50] text-white p-8 rounded-[10px] text-start mb-4">
-        <div class="flex gap-6 mb-6">
-          <img class="rounded-[50%] w-12" src="./images/image-anne.jpg" alt="" srcset="">
-          <div >
-            <p> Anne Wallace  </p> 
-             <p class="text-[#bb5c96]">Verified Buyer</p>  
-          </div>
-        </div >
-        "Put an order with this company and can only praise them for the very high
-        standard. Will definitely use them again and recommend them to everyone!"
-      </div>
+      
 
     
     
@@ -121,11 +152,9 @@
    
     </main>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    <div class=" mt-[4rem] font-[Dosis] font-[600] text-center">
+      <p>Coded by <a href="https://www.linkedin.com/in/akshay-jadhav-01737711b/" target="_blank" class="hover:underline">Akshay Jadhav</a></p>
+      <a class="hover:underline" href="https://github.com/apj19/FrontendMentorChallenges" target="_blank" >Github</a> 
+  </div>
   </body>
 </html>
