@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo data storage component</title>
+</head>
+<body class="font-[Raleway] min-w-[375px] max-w-[1440px] min-h-[100vh] flex flex-col justify-center items-center
+ bg-[#0c122c] bg-no-repeat
+bg-[url('./images/bg-mobile.png')]
+
+lg:bg-[url('./images/bg-desktop.png')] lg:bg-[center_bottom_-6rem] 
+
+">
+  <!-- <img class="lg:hidden absolute z-[-1]" src="./images/bg-mobile.png" alt="" srcset=""> -->
+
+  <main class="w-[300px] lg:w-[60%] lg:flex lg:gap-[2rem] lg:justify-center lg:items-center 
+  ">
+
+
+    <div class="bg-[#1e2c69] w-[40%] h-[10rem] lg:h-[12rem] lg:relative lg:bottom-[1.5rem]
+    rounded-b rounded-tl rounded-tr-[5rem] mb-[1rem] p-8 
+    ">
+        <img class="lg:mb-[2rem]" src="./images/logo.svg" alt="" srcset="">
+        
+      
+
+      <div class=" mt-4 flex gap-4">
+        <div class="bg-[#0c122c] w-[3rem] h-[3rem] flex justify-center items-center rounded-[0.5rem]">
+          <img src="./images/icon-document.svg" alt="" srcset="">
+        </div>
+
+        <div class="bg-[#0c122c] w-[3rem] h-[3rem] flex justify-center items-center rounded-[0.5rem]">
+          <img src="./images/icon-folder.svg" alt="" srcset="">
+        </div>
+
+        <div class="bg-[#0c122c] w-[3rem] h-[3rem] flex justify-center items-center rounded-[0.5rem]">
+          <img src="./images/icon-upload.svg" alt="" srcset="">
+        </div>
+        
+        
+        
+      </div>
+
+    </div>
+    
+    <!-- data section -->
+    <section class="w-[60%] h-[9rem] bg-[#1e2c69] lg:h-[8rem]
+    rounded-[0.5rem] relative pt-4 px-6 ">
+
+      <div >
+        <p class="text-[0.9rem] text-[#d2dcff] mb-2" >You’ve used 815 GB of your storage</p>
+        
+        <div class="w-[100%] h-[1.4rem] rounded-[0.7rem] bg-[#141f4a]
+        flex justify-start items-center 
+        ">
+
+          <div class="w-[75%] h-[0.8rem] rounded-[0.4rem] bg-[#141f4a]
+        bg-gradient-to-r from-[#ffa399] to-[#ff4d97] ml-1  pt-[2px]
+        
+        ">
+
+        <div class="w-[0.6rem] h-[0.6rem] bg-white rounded-[50%] relative left-[94%] pt-2 "></div>
+
+        </div>
+
+        </div>
+        <p class="mt-2 text-white" >0 GB</p>
+        <p class="absolute top-[4.6rem] right-[1rem] text-white">1000 GB</p>
+      </div>
+    
+      <!-- white pop-up -->
+      <div class=" flex justify-center items-center
+      bg-white absolute w-[60%] h-[4rem] rounded left-[20%] bottom-[-2rem] lg:w-[30%] lg:h-[3rem] lg:top-[-2rem] lg:left-[64%]">
+
+      <div class="hidden lg:block absolute w-[1rem] border-b-[2rem] border-r-[2rem] border-b-[transparent]
+      border-r-[white]  right-0 bottom-[-1rem]" ></div>
+        <span class="text-[2rem] font-[700] mr-2">185</span>
+        <span class="text-[#9e9fa3]"> GB Left</span>
+       
+      </div>
+
+    </section>
+    
+
+  </main>
+  
+  
+ 
+  
+  
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+</html>
