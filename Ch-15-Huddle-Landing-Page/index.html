@@ -5,40 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
 </head>
-<body>
+<body class="text-[18px] min-w-[375px] max-w-[1440px] font-['Open_Sans'] bg-[#edfbfe]">
 
-  Try It Free
+  <section class="pt-[3rem] px-[5%] " >
+    <img class="absolute bg-no-repeat bg-center top-0 z-[-1]
+  bg-cover lg:hidden w-[100%]" src="./images/bg-hero-mobile.svg" alt="loading" srcset="">
+  <img class="absolute bg-no-repeat bg-center top-0 z-[-1]
+  bg-cover lg:block w-[100%]" src="./images/bg-hero-desktop.svg" alt="loading" srcset="">
 
-  Build The Community Your Fans Will Love
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+   <nav class=" flex justify-between items center mb-[2rem]">
+    <img class="w-[8rem] lg:w-auto" src="./images/logo.svg" alt="" srcset="">
+    <button class="rounded-full bg-[white] px-6 py-2 font-[600] drop-shadow-xl ">Try It Free</button>
 
-  Get Started For Free
+   </nav>
+<!-- herosection -->
+  <div class=" mt-[8rem] lg:grid grid-cols-2 lg:gap-8 lg:mt-[4rem]">
+    <div class="text-center lg:text-start lg:pr-16 lg:mt-[6rem]">
+      <h1 class="text-[1.6rem] font-[Poppins] font-[600] mb-12 lg:mb-6  lg:text-[2.5rem]">Build The Community Your Fans Will Love</h1>
+      <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+        Create connections with your users as you engage in genuine discussion. </p>
 
-  Grow Together
+      <button class="rounded-full bg-[#fe52c0] px-4 py-2 w-[70%] lg:w-[50%] text-white my-12 lg:mt-6 lg:mb-16">Get Started For Free</button>
 
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
+    </div>
 
-  Flowing Conversations
+    <img src="./images/illustration-mockups.svg" alt="loading">
 
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
+  </div>
 
-  Your Users
+  </section>
 
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
+  <main class="bg-white px-[7%] pt-[4rem]
+  pb-[8rem] 
+  lg:pb-[18rem]">
+
+    <div class="p-4 mb-16 rounded-[1rem] 
+    shadow-slate-300 shadow-lg  lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:p-12">
+
+      <div class="mt-8 text-center lg:text-start lg:pl-12">
+        <h2 class="font-[600] font-[Poppins] lg:text-[1.5rem]">Grow Together</h2>
+        <p class="text-[0.9rem]  text-[#b8b8b8] my-6">Generate meaningful discussions with your audience and build a strong, loyal community. 
+          Think of the insightful conversations you miss out on with a feedback form. </p>
+      </div>
+
+      <img class="pl-8" src="./images/illustration-grow-together.svg" alt="">
+    </div>
+
+
+    <div class="p-4 mb-16 rounded-[1rem] 
+    shadow-slate-300 shadow-lg  lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:p-12">
+    <img class="pl-8" src="./images/illustration-flowing-conversation.svg" alt="">
+
+
+      <div class="mt-8 text-center lg:text-start lg:pl-12">
+        <h2 class="font-[600] font-[Poppins] lg:text-[1.5rem]">Flowing Conversations</h2>
+        <p class="text-[0.9rem]  text-[#b8b8b8] my-6">You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+          have just-in-time loading for a more natural flow. </p>
+      </div>
+
+    </div>
+
+
+    <div class="p-4 mb-16  rounded-[1rem] 
+    shadow-slate-300 shadow-lg  lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:p-12">
+
+      <div class="mt-8 text-center lg:text-start lg:pl-12">
+        <h2 class="font-[600] font-[Poppins] lg:text-[1.5rem]">Your Users</h2>
+        <p class="text-[0.9rem]  text-[#b8b8b8] my-6">It takes no time at all to integrate Huddle with your app's authentication solution. 
+          This means, once signed in to your app, your users can start chatting immediately. </p>
+      </div>
+
+      <img class="pl-8" src="./images/illustration-your-users.svg" alt="">
+    </div>
+
+   
+
+  
+
+    
+
+  </main>
+  
+  
+
+  
+
+  
+
+  
+
+  
 
   Ready To Build Your Community?
 
@@ -60,11 +125,7 @@
 
   &copy; Copyright 2018 Huddle. All rights reserved.
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+  
 </body>
+<script src="https://cdn.tailwindcss.com"></script>
 </html>
