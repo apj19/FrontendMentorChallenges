@@ -8,23 +8,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/092bfc665f.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
   
 </head>
-<body class="text-[18px] min-w-[375px] max-w-[1440px] font-['Open_Sans'] bg-[#edfbfe]">
+<body class="text-[18px] min-w-[375px] max-w-[1440px] font-['Open_Sans'] bg-[#edfbfe] box-border relative">
 
-  <section class="pt-[3rem] px-[5%] " >
-    <img class="absolute bg-no-repeat bg-center top-0 z-[-1]
-  bg-cover lg:hidden w-[100%]" src="./images/bg-hero-mobile.svg" alt="loading" srcset="">
-  <img class="absolute bg-no-repeat bg-center top-0 z-[-1]
-  bg-cover lg:block w-[100%]" src="./images/bg-hero-desktop.svg" alt="loading" srcset="">
+  <section class="pt-[3rem] px-[5%] relative box-border 
+  bg-[url('./images/bg-hero-mobile.svg')]   
+  lg:bg-[url('./images/bg-hero-desktop.svg')] bg-no-repeat bg-cente" >
+    <!-- <img class="absolute bg-no-repeat bg-center top-0 z-[-1]
+  bg-cover lg:hidden " src="./images/bg-hero-mobile.svg" alt="loading" srcset=""> -->
+  <!-- <img class="absolute bg-no-repeat bg-center top-0 z-[-1]
+  bg-cover lg:block " src="./images/bg-hero-desktop.svg" alt="loading" srcset=""> -->
 
 
    <nav class=" flex justify-between items center mb-[2rem]">
     <img class="w-[8rem] lg:w-auto" src="./images/logo.svg" alt="" srcset="">
-    <button class="rounded-full bg-[white] px-6 py-2 font-[600] drop-shadow-xl ">Try It Free</button>
+    <button class="rounded-full bg-[white] px-6 py-2 font-[600] drop-shadow-xl">Try It Free</button>
 
    </nav>
 <!-- herosection -->
@@ -44,11 +47,11 @@
 
   </section>
 
-  <main class="bg-white px-[7%] pt-[4rem]
-  pb-[8rem] 
-  lg:pb-[18rem]">
+  <main class="bg-white px-[7%] pt-[4rem] 
+  pb-[8rem] box-border 
+  lg:pb-[10rem]  relative">
 
-    <div class="p-4 mb-16 rounded-[1rem] 
+    <div class="p-4 mb-16 rounded-[1rem] box-border  
     shadow-slate-300 shadow-lg  lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:p-12">
 
       <div class="mt-8 text-center lg:text-start lg:pl-12">
@@ -75,7 +78,7 @@
     </div>
 
 
-    <div class="p-4 mb-16  rounded-[1rem] 
+    <div class="p-4 mb-8  rounded-[1rem] 
     shadow-slate-300 shadow-lg  lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:p-12">
 
       <div class="mt-8 text-center lg:text-start lg:pl-12">
@@ -87,13 +90,86 @@
       <img class="pl-8" src="./images/illustration-your-users.svg" alt="">
     </div>
 
-   
 
-  
+    <div class="absolute z-[3] bg-white rounded-[1rem]
+    shadow-[0_0px_16px_0px_rgba(0,0,0,0.3)] w-[85%]   lg:w-[50%] lg:left-[25%] bottom-[-5.5rem] flex flex-col justify-center items-center p-8">
 
-    
+      <h1 class="font-[600] font-[Poppins] text-center mb-8 lg:text-[1.5rem]">Ready To Build Your Community?</h1>
+      <button class="rounded-full bg-[#fe52c0] text-white py-2 px-6 text-[0.8rem] shadow-slate-300 shadow-lg
+      lg:w-[50%] lg:h-[3.5rem] lg:text-[1.1rem]
+      ">Get Started For Free</button>
+
+    </div>
 
   </main>
+
+  <footer class="bg-[#00252e] relative  pt-[8rem] pb-[4rem] text-white text-[0.8rem] lg:text-[1rem] text-opacity-70 px-[7%]">
+
+    
+    <img class="mb-8 h-6" src="./images/logofooter.svg" alt="" srcset="">
+
+    
+    <div class="lg:grid lg:grid-cols-3 lg:gap-16">
+      <div >
+
+      
+
+        <div class="flex gap-6 mb-8">
+          <img class="h-[1rem]  relative top-2 " src="./images/icon-location.svg" alt="" srcset="">
+  
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua</p> 
+  
+        </div>
+  
+        <div class="flex items-center gap-6 mb-8">
+          <img class="h-[1rem]  " src="./images/icon-phone.svg" alt="" srcset="">
+  
+          <p class="relative right-1">+1-543-123-4567</p> 
+  
+        </div>
+  
+        <div class="flex gap-6 mb-8 items-center ">
+          <img class="h-[1rem]  " src="./images/icon-email.svg" alt="" srcset="">
+  
+          <p class="relative right-2">example@huddle.com</p> 
+  
+        </div>
+        
+      </div>
+  
+  
+      <div class="mb-8">
+        <ul class="lg:grid lg:grid-cols-2">
+          <li class="mb-2">About Us</li>
+          <li class="mb-2 lg:row-start-2">What We Do</li>
+          <li class="mb-2 lg:row-start-3">FAQ</li>
+          <li class="mb-2">Career</li>
+          <li class="mb-2">Blog</li>
+          <li class="mb-2">Contact Us</li>
+        </ul>
+      </div>
+  
+  
+      <div class="flex gap-4 justify-center mb-8 ">
+        <p><i class="fa-brands fa-facebook-f text-white w-[2rem] h-[2rem] flex justify-center items-center border rounded-[50%]"></i></p>
+        
+        <p><i class="fa-brands fa-twitter text-white w-[2rem] h-[2rem] flex justify-center items-center border rounded-[50%]"></i></p>
+        
+        <p><i class="fa-brands fa-instagram  text-white w-[2rem] h-[2rem] flex justify-center items-center border rounded-[50%]"></i></p>
+  
+        
+      </div>
+
+    </div>
+
+
+    <p class="absolute  top-[90%] left-[3rem] lg:left-[75%] lg:text-[0.8rem]  ">
+      <i class="fa-regular fa-copyright"></i>
+      Copyright 2018 Huddle. All rights reserved.</p>
+    
+
+  </footer>
   
   
 
@@ -105,26 +181,9 @@
 
   
 
-  Ready To Build Your Community?
+  
 
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
+ 
   
 </body>
 <script src="https://cdn.tailwindcss.com"></script>
