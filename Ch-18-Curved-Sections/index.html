@@ -5,63 +5,235 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://kit.fontawesome.com/092bfc665f.js" crossorigin="anonymous"></script>
   
   <title>Frontend Mentor | Huddle landing page with curved sections</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  Try it free
+<body class="min-w-[375px] max-w-[1440px] font-['Open_Sans']">
 
-  Build The Community Your Fans Will Love
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
+  <nav class=" px-[5%] pt-[3rem] flex justify-between items center mb-[2rem]">
+    <img class="h-[2rem] w-[8rem] lg:w-auto" src="./images/logo.svg" alt="" srcset="">
+    <button class="rounded-full border 
+    border-[#ff52bf] text-[#ff52bf] text-[0.8rem] bg-[white] px-6 py-2 font-[600] hover:opacity-70">Try It Free</button>
 
-  Get Started For Free
-
-  1.4k+
-  Communities Formed
-
-  2.7m+
-  Messages Sent
-
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
+   </nav>
   
-  Phone: +1-543-123-4567
-  example@huddle.com
+   <main class="px-[5%] flex flex-col justify-center items-center mb-16">
 
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
+    <div class=" mt-[8rem] lg:w-[70%] ">
+      <div class="text-center ">
+        <h1 class="text-[1.6rem] font-[Poppins] font-[600] mb-12 lg:mb-6  lg:text-[2.5rem]">Build The Community Your Fans Will Love</h1>
+        <p class="lg:px-36 lg:text-[1.2rem]">Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
+          Create connections with your users as you engage in genuine discussion. </p>
+  
+        <button class="rounded-full bg-[#fe52c0] px-4 py-4 lg:w-[40%]   text-white my-12 lg:mt-6 lg:mb-16 drop-shadow-xl hover:opacity-70">Get Started For Free</button>
+  
+      </div>
+  
+      <img src="./images/screen-mockups.svg" alt="loading">
 
-  Subscribe
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+
+   </main>
+
+   <section class="px-[5%] flex flex-col justify-center items-center lg:flex-row lg:justify-around mb-40">
+
+    <div class="mb-16 lg:mb-0">
+      <img class="h-[2rem]" src="./images/icon-communities.svg" alt="" srcset="">
+      <h2 class="font-[700] font-[Poppins] text-[4rem]">1.4k+</h2>
+      <p class="opacity-70">Communities Formed</p>
+
+    </div>
+
+     <div>
+      <img class="h-[2rem]" src="./images/icon-messages.svg" alt="" srcset="">
+      <h2 class="font-[700] font-[Poppins] text-[4rem]">2.7m+</h2>
+      <p class="opacity-70 text-center relative left-[4rem] w-[5rem] lg:w-[auto] lg:static">Messages sent </p>
+      
+
+     </div>
+
+   </section>
+
+   <!-- image-1 -->
+   <section class="px-[7%] pt-[4rem] 
+   box-border 
+  lg:pb-[5rem] bg-[#f6fbff]  relative">
+    
+    <div class=" p-4  lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:p-12 ">
+      
+      <!-- mobile top bg -->
+      <img class="absolute w-[100%] top-[-6rem] md:hidden lg:hidden 
+      left-0
+      " src="./images/bg-section-top-mobile-1.svg" alt="" srcset="">
+      <!-- mobile bottom bg -->
+      <img class="absolute w-[100%] top-[100%]  md:hidden lg:hidden 
+      left-0
+      " src="./images/bg-section-bottom-mobile-1.svg" alt="" srcset="">
+
+      <!-- desktop top bg -->
+      <img class="hidden absolute w-[100%] top-[-7.5rem] md:hidden lg:block
+      left-0
+      " src="./images/bg-section-top-desktop-1.svg" alt="" srcset="">
+      <!-- desktop bottom bg -->
+      <img class=" hidden absolute w-[100%] top-[100%]  md:hidden lg:block 
+      left-0
+      " src="./images/bg-section-bottom-desktop-1.svg" alt="" srcset="">
+
+      
+
+
+      <img class="pl-8" src="./images/illustration-grow-together.svg" alt="">
+      
+       <div class="mt-8 text-center lg:text-start lg:pl-12">
+        <h2 class="font-[600] font-[Poppins] lg:text-[1.5rem]">Grow Together</h2>
+        <p class="text-[0.9rem]  text-[#b8b8b8] mt-6">Generate meaningful discussions with your audience and build a strong, loyal community. 
+          Think of the insightful conversations you miss out on with a feedback form. </p>
+       </div>
+
+    </div>
+   </section>
+
+
+
+    <!-- image-2 -->
+    <section class="px-[7%] pt-[4rem] mb-32 lg:mb-16 
+     box-border  mt-16 
+    lg:pb-[10rem]  relative">
+  
+      <div class="p-4    lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:p-12">
+    <img class="pl-8" src="./images/illustration-flowing-conversation.svg" alt="">
+
+
+      <div class="mt-8 text-center lg:text-start lg:pl-12">
+        <h2 class="font-[600] font-[Poppins] lg:text-[1.5rem]">Flowing Conversations</h2>
+        <p class="text-[0.9rem]  text-[#b8b8b8] my-6">You wouldn't paginate a conversation in real life, so why do it online? Our threads 
+          have just-in-time loading for a more natural flow. </p>
+      </div>
+
+      </div>
+
+
+    </section>
+    
+    <!-- image-3 -->
+
+    <section class="px-[7%] pt-[4rem] mb-40 
+     box-border 
+    bg-[#f6fbff]  relative">
+    <!-- mobile top bg -->
+    <img class="absolute w-[100%] top-[-6rem] md:hidden lg:hidden 
+    left-0
+    " src="./images/bg-section-top-mobile-2.svg" alt="" srcset="">
+    <!-- mobile Bottom bg -->
+    <img class="absolute w-[100%] top-[100%]  md:hidden lg:hidden 
+    left-0
+    " src="./images/bg-section-bottom-mobile-2.svg" alt="" srcset="">
+
+     <!-- desktop top bg -->
+     <img class="hidden absolute w-[100%] top-[-7.5rem] md:hidden lg:block
+     left-0
+     " src="./images/bg-section-top-desktop-2.svg" alt="" srcset="">
+     <!-- desktop bottom bg -->
+     <img class=" hidden absolute w-[100%] top-[100%]  md:hidden lg:block 
+     left-0
+     " src="./images/bg-section-bottom-desktop-2.svg" alt="" srcset="">
+
+      <div class="p-4 mb-8 lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:p-12">
+
+        <img class="pl-8" src="./images/illustration-your-users.svg" alt="">
+          
+        <div class="mt-8 text-center lg:text-start lg:pl-12">
+            <h2 class="font-[600] font-[Poppins] lg:text-[1.5rem]">Your Users</h2>
+            <p class="text-[0.9rem]  text-[#b8b8b8] my-6">It takes no time at all to integrate Huddle with your app's authentication solution. 
+              This means, once signed in to your app, your users can start chatting immediately. </p>
+          </div>
+    
+        </div>
+
+    </section>
+
+    <section class="mt-[20rem]  flex flex-col justify-center items-center">
+      <h1 class="font-[600] font-[Poppins] text-[1.5rem] text-center mb-8 lg:text-[2rem]">Ready To Build Your Community?</h1>
+      <button class="rounded-full bg-[#fe52c0] text-white py-2 px-6 text-[0.8rem] shadow-slate-300 shadow-lg
+      lg:w-[25%] lg:h-[3.5rem] lg:text-[1.1rem] hover:opacity-70
+      ">Get Started For Free</button>
+    </section>
+
+
+
+    <footer class="mt-[20rem] bg-[#00252e] relative  pt-[8rem] pb-[4rem] text-white text-[0.8rem] lg:text-[1rem] px-[7%]  lg:grid lg:grid-cols-2">
+
+
+      <!-- mobile top bg -->
+      <img class="absolute w-[100%] top-[-3rem] md:hidden lg:hidden 
+      left-0
+      " src="./images/bg-footer-top-mobile.svg" alt="" srcset="">
+
+
+      <!-- mobile top bg -->
+      <img class=" hidden absolute w-[100%] top-[-9rem] md:hidden lg:block 
+      left-0
+      " src="./images/bg-footer-top-desktop.svg" alt="" srcset="">
+      
+      
+      <div class="mb-32 lg:col-start-2">
+        <h2 class="font-[600] font-[Poppins] tracking-widest text-[1.2rem] mb-4">Newsletter</h2>
+        <p class="mb-4 text-[1rem] lg:pr-48 ">To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          send you spam or pass on your email address</p>
+        <input class="block lg:inline-block w-[100%] lg:w-[50%] h-[2rem] 
+        rounded mb-4 lg:mr-8 
+        " type="text">
+      
+        <button class="rounded h-[2rem] w-[40%] lg:w-[30%] bg-[#fe52c0] relative left-[60%] lg:static ">Subscribe</button>
+      </div>
+
+    
+      <div class="lg:row-start-1">
+      <img class="mb-8 w-56" src="./images/logofooter.svg" alt="" srcset="">
+      <p class="mb-8 pr-8 lg:pr-52">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+        incididunt ut labore et dolore magna aliqua</p>
+
+    
+          <div class="flex items-center gap-6 mb-4">
+            <img class="h-[1rem]  " src="./images/icon-phone.svg" alt="" srcset="">
+    
+            <p class="relative right-1">Phone:+1-543-123-4567</p> 
+    
+          </div>
+    
+          <div class="flex gap-6 mb-8 items-center ">
+            <img class="h-[1rem]  " src="./images/icon-email.svg" alt="" srcset="">
+    
+            <p class="relative right-2">example@company.com</p> 
+    
+          </div>
+
+          <div class="flex gap-4 justify-start mb-8 ">
+            <svg class="w-[1rem] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+            
+            <svg class="w-[1rem] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+  
+  
+            <svg class="w-[1rem] fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+            
+            
+      
+            
+          </div>
+          
+      </div>
+    
+  
+    </footer>
+    
+
+
 </body>
 </html>
