@@ -1,0 +1,22 @@
+{
+  "name": "frontendchallenges",
+  "version": "1.0.0",
+  "description": "Challenge by <a href=\"https://www.frontendmentor.io?ref=challenge\" target=\"_blank\">Frontend Mentor</a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apj19/FrontendMentorChallenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apj19/FrontendMentorChallenges/issues"
+  },
+  "homepage": "https://github.com/apj19/FrontendMentorChallenges#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.2.4"
+  }
+}
